@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.hero {
+    width: 100vw;
+    height:75vh;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.background{
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    height: 90%;
+
+    z-index: -1;
+    background-image: url("https://media.npr.org/assets/img/2020/02/10/ap_20041124838741_wide-c3dc2e335752cc661345dd59c763cbb796ad5501.jpg?s=1400");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.region {
+    padding-top: 0;
+}
+
+.title {
+    position: absolute;
+    border-color: #727272;
+    border-width: 1px;
+    border-style: solid;
+    width: 70vw;
+    height: 13%;
+    top: 83%;
+    background: white;
+    box-shadow: 0 0 30px;
+    left: 50%;
+
+    transform: translate(-50%, 0);
+    cursor: pointer;
+}
+
+.article-name {
+    padding: 0.4rem 2rem;
+    padding-bottom: 0;
+    color: #313131;
+}
+
+author {
+    display: block;
+    padding: 0 4rem;
+    margin-bottom: 1rem;
+}
+
+.site {
+    padding: 0.6rem;
+    color: white;
+    border-radius: 12%;
+    background: var(--main-color);
+    font-size: 0.8rem;
+    margin: 0.4rem 4rem;
+}
+
+.news {
+    width: 100%;
+    display: flex;
+    box-shadow: 0 0 30px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    margin-top: 3rem;
+}
+
+.img {
+    width: 33%;
+}
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text{
+    padding: 2rem;
+    border-color: #727272;
+}
+.text-title {
+    padding: 0;
+    padding-bottom: 1rem;
+}
+
+footer{
+    width: 100%;
+    color: white;
+    padding: 2rem;
+    background: var(--main-color);
+    margin-top: 3rem;
+}
+
+footer p {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .title {
+        width: 90vw;
+        height: 30%;
+        top: 72%;
+        height: 19%;
+        top: 80%;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .background{
+        height: 90%;
+    }
+
+    .title {
+        width: 90vw;
+        height: 30%;
+        top: 72%;
+        
+    }
+
+    .article-name {
+        font-size: 1rem;
+    }
+
+
+    .news {
+        flex-direction: column;
+    }
+
+    .img {
+        width: 100%;
+    }
+}
+
+
+
