@@ -29,6 +29,9 @@ function createHeader(data) {
 
   const author = document.querySelector("author");
   author.innerHTML = data.author;
+
+  const site = document.querySelector(".site");
+  site.innerHTML = data.source.name;
 }
 
 function createElem(data) {
